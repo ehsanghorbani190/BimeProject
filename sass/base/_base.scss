@@ -1,0 +1,16 @@
+//basic css reset
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; // makes 1rem = 10px (10px/16px = 62.5%)
+}
