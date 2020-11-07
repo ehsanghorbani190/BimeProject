@@ -1,0 +1,20 @@
+@keyframes slideDown{
+    0%{
+        transform: translateY(-100%); 
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes logo{
+    0%{
+        transform: translate(-45vw  ,+50vh) scale(5);
+    }
+    90%{
+        transform: translate(-45vw  ,+50vh) scale(5);
+    }
+    100%{
+        transform: translate(0 ,0);
+    }
+}
