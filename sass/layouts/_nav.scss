@@ -5,6 +5,14 @@
 	justify-content: space-between;
 	background-color: $color-white;
 	padding: 0.5rem 7rem 0.5rem 7rem;
+	animation-name: slideDown;
+	animation-duration: 1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: backwards;
+	-webkit-animation-name: slideDown;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 3.5s;
+	-webkit-animation-fill-mode: backwards;
 	&__logo {
 		display: flex;
 		align-items: center;
@@ -12,22 +20,24 @@
 	&__logo-pic {
 		width: 6rem;
 		padding: 0.1rem;
+		animation: logo 4s;
 	}
 	&__logo-text {
 		font-size: 4rem;
 		color: $color-primary;
-        font-weight: 700;
-        cursor: default;
+		font-weight: 700;
+		cursor: default;
 	}
 	&__buttons {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: row-reverse;
 		flex: 0.5;
 	}
 	&__button {
 		text-decoration: none;
 		color: $color-dark-gray;
-		font-size: 2rem;
+		font-size: 1.75rem;
 		padding: 0.75rem;
 		transition: all 0.2s;
 		border-radius: 1rem;
