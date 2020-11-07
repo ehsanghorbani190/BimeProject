@@ -1,0 +1,58 @@
+.nav {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $color-white;
+	padding: 0.5rem 7rem 0.5rem 7rem;
+	&__logo {
+		display: flex;
+		align-items: center;
+	}
+	&__logo-pic {
+		width: 6rem;
+		padding: 0.1rem;
+	}
+	&__logo-text {
+		font-size: 4rem;
+		color: $color-primary;
+        font-weight: 700;
+        cursor: default;
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		flex: 0.5;
+	}
+	&__button {
+		text-decoration: none;
+		color: $color-dark-gray;
+		font-size: 2rem;
+		padding: 0.75rem;
+		transition: all 0.2s;
+		border-radius: 1rem;
+		&:hover {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+	}
+	&__account {
+		display: flex;
+		align-items: center;
+		transition: all 0.2s;
+		border-radius: 1rem;
+		padding: 0.75rem;
+		cursor: pointer;
+		&:hover {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+	}
+	&__account-icon {
+		width: 2.75rem;
+		padding: 0.4rem;
+	}
+	&__account-text {
+		font-size: 2rem;
+	}
+}
