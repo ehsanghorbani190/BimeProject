@@ -1,8 +1,8 @@
 {
-  "name": "trillo",
+  "name": "bime",
   "version": "1.0.0",
-  "description": "Trillo app",
-  "main": "index.js",
+  "description": "BimeProject",
+  "main": "index.html",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
