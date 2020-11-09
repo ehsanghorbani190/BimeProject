@@ -6,8 +6,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	//stick it to the top
-	margin-top: -8.5rem;
-	position: relative;
+	position: absolute;
 	top: 0;
 	//make nav on top of it
 	z-index: -1;
@@ -72,11 +71,11 @@
 		&__item-text {
 			font-size: 2.25rem;
 			backface-visibility: hidden;
-			color: $color-primary-dark;
-			animation-name: heroText;
-			animation-duration: 1s;
-			animation-delay: 3.75s;
-			animation-fill-mode: backwards;
+            color: $color-primary-dark;
+            animation-name: heroText;
+		animation-duration: 1s;
+		animation-delay: 3.75s;
+		animation-fill-mode: backwards;
 		}
 	}
 }
