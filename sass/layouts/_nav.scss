@@ -1,5 +1,8 @@
 .nav {
 	display: flex;
+	position: relative;
+	z-index: 1;
+	height: 8.5rem;
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
