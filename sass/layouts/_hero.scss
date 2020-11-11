@@ -18,12 +18,16 @@
 	&__waves{
 		width: 100%;
 		position: absolute;
-		bottom: -.5rem;
+		bottom: -9rem;
 		z-index: 1;
 	}
 	&__arr{
-		position: absolute;
-		bottom: 20rem;
+		 width: 5rem;
+		 transform: translateY(5rem);
+		 animation-name: heroArr;
+		 animation-duration: 2s;
+		 animation-delay: 3.5s;
+		 animation-fill-mode: backwards;
 	}
 	
 }
