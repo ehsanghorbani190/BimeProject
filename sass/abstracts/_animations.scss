@@ -48,3 +48,13 @@
         opacity: 1  ;
     }
 }
+@keyframes mainSlide{
+    from{
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-20rem);
+    }
+}
