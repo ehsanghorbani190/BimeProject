@@ -45,10 +45,10 @@ body {
 
 @keyframes heroArr {
   from {
-    transform: translateY(0);
+    transform: translateY(-7rem);
     opacity: 0; }
   to {
-    transform: translateY(5rem);
+    transform: translateY(-3rem);
     opacity: 1; } }
 
 @keyframes mainSlide {
@@ -57,7 +57,7 @@ body {
     transform: translateY(-5rem); }
   to {
     opacity: 1;
-    transform: translateY(-20rem); } }
+    transform: translateY(-25rem); } }
 
 .nav {
   display: flex;
@@ -142,7 +142,7 @@ body {
     z-index: 1; }
   .hero__arr {
     width: 5rem;
-    transform: translateY(5rem);
+    transform: translateY(-3rem);
     animation-name: heroArr;
     animation-duration: 1s;
     animation-delay: 3.5s;
@@ -159,8 +159,9 @@ body {
     background-color: white;
     border-radius: 100px;
     position: relative;
-    transform: translateY(-20rem);
+    transform: translateY(-25rem);
     z-index: 2;
+    padding: 3rem 0;
     animation-name: mainSlide;
     animation-duration: 1s;
     animation-delay: 3.5s;
@@ -183,6 +184,7 @@ body {
   animation-delay: 3.75s;
   position: relative;
   z-index: 2;
+  transform: translateY(-10rem);
   animation-fill-mode: backwards;
   list-style: none;
   font-size: 2rem;
