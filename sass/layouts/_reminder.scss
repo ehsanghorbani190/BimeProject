@@ -2,89 +2,95 @@
 	display: flex;
 	margin-top: 5rem;
 	padding: 2.5rem 0;
-    flex-direction: column;
+	flex-direction: column;
 	align-items: center;
 	&__heading {
-        font-size: 3.75rem;
-        font-weight: 700;
-        color: $color-dark-gray;
-        margin-bottom: 3rem;
-    }
+		font-size: 3.75rem;
+		font-weight: 700;
+		color: $color-dark-gray;
+		margin-bottom: 7.5rem;
+	}
+	&__circles {
+		position: absolute;
+        top: -6rem;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+	}
 	&__box {
-        background-color: #f3f3f3;
-        width: 80%;
-        border-radius: 50px;
-        box-shadow: 0 2rem 4rem rgba(black , .2);
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 2.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+		background-color: #f3f3f3;
+		position: relative;
+		width: 80%;
+		border-radius: 50px;
+		box-shadow: 0 2rem 4rem rgba(black, 0.2);
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 2.5rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
 	}
 	&__input-box {
-        flex: 0 0 calc((100%)/3);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+		flex: 0 0 calc((100%) / 3);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
 	}
 	&__label {
-        margin-right: 4rem;
-        margin-bottom: 1.5rem;
-        font-size: 2.25rem;
-        color: $color-primary;
+		margin-right: 4rem;
+		margin-bottom: 1.5rem;
+		font-size: 2.25rem;
+		color: $color-primary;
 	}
 	&__input {
-        width: 95%;
-        text-align: right;
-        padding: 2.5rem;
-        font-size: 2rem;
-        border-radius: 20px;
-        box-shadow: 0 2rem 2rem rgba(black , .2);
-        border: none;
-        border: 1.75px solid $color-primary;
-        margin-bottom: 2rem;
-        transition: all .3s;
-        &::placeholder{
-            color: $color-dark-gray;
-            font-family: inherit;
-            font-size: 1.5rem;
-        }
-        &:focus{
-            outline: none; 
-            box-shadow: 0 1rem 1rem rgba(black , .2); 
-            transform: translateY(.5rem);
-
-        }
+		width: 95%;
+		text-align: right;
+		padding: 2.5rem;
+		font-size: 2rem;
+		border-radius: 20px;
+		box-shadow: 0 2rem 2rem rgba(black, 0.2);
+		border: none;
+		border: 1.75px solid $color-primary;
+		margin-bottom: 2rem;
+		transition: all 0.3s;
+		&::placeholder {
+			color: $color-dark-gray;
+			font-family: inherit;
+			font-size: 1.5rem;
+		}
+		&:focus {
+			outline: none;
+			box-shadow: 0 1rem 1rem rgba(black, 0.2);
+			transform: translateY(0.5rem);
+		}
 	}
 	&__button {
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-        flex: 0 0 30%;
-        font-family: inherit;
-        border-radius: 20px;
-        border: none;
-        background-image: linear-gradient(to right , lighten($color-primary , 10%) , darken($color-primary-dark, 10%));
-        padding: 1rem 0rem;
-        font-size: 4rem;
-        color: white;
-        transition: all .3s;
-        backface-visibility: hidden;
-        &:hover{
-            cursor: pointer;
-            background-image: linear-gradient(to left , lighten($color-primary , 10%) , darken($color-primary-dark, 10%));
-            transform: translateY(-1rem) scale(1.05);
-            box-shadow: 0 1rem 2rem rgba(black , .6);
-        }
-        &:focus{
-            outline: none;
-        }
-        &:active{
-            box-shadow: 0 .6rem 1.25rem rgba(black , .6);
-            outline: none;
-            transform: translateY(-.5rem) scale(1.05);
-
-        }
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+		flex: 0 0 30%;
+		font-family: inherit;
+		border-radius: 20px;
+		border: none;
+		background-image: linear-gradient(to right, lighten($color-primary, 10%), darken($color-primary-dark, 10%));
+		padding: 1rem 0rem;
+		font-size: 4rem;
+		color: white;
+		transition: all 0.3s;
+		backface-visibility: hidden;
+		&:hover {
+			cursor: pointer;
+			background-image: linear-gradient(to left, lighten($color-primary, 10%), darken($color-primary-dark, 10%));
+			transform: translateY(-1rem) scale(1.05);
+			box-shadow: 0 1rem 2rem rgba(black, 0.6);
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			box-shadow: 0 0.6rem 1.25rem rgba(black, 0.6);
+			outline: none;
+			transform: translateY(-0.5rem) scale(1.05);
+		}
 	}
 }
