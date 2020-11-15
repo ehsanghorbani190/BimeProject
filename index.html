@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Bimsa</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="shortcut icon" href="./img/logo-mob.png" type="image/x-icon">
+		<link rel="shortcut icon" href="./img/logo-mob.png" type="image/x-icon" />
 	</head>
 	<body>
 		<header class="header">
@@ -245,6 +245,14 @@
 				<div class="reminder">
 					<h2 class="reminder__heading">یادآور تمدید یا اقساط بیمه</h2>
 					<div class="reminder__box">
+						<picture>
+							<source
+								srcset="./img/circles.png 1x, ./img/circles@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="reminder__circles"
+							/>
+							<img srcset="./img/circles.png 1x, ./img/circles@2x.png 2x" class="reminder__circles" />
+						</picture>
 						<div class="reminder__input-box">
 							<label for="kind" class="reminder__label">نوع بیمه</label>
 							<input
