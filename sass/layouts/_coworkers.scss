@@ -1,0 +1,46 @@
+.coworkers {
+	display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    padding-bottom: 90rem;
+	flex-direction: column;
+	&__heading {
+        color: $color-dark-gray;
+        font-size: 5rem;
+        margin-bottom: 4rem;
+    }
+    &__buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+		font-size: 5rem;
+		width: 6rem;
+		height: 6rem;
+		box-shadow: 0 1rem 2rem rgba(black, 0.3);
+		border-radius: 50%;
+		border: none;
+		transition: all 0.3s;
+		background-color: $color-primary;
+		color: white;
+		margin: 1rem;
+		&:hover {
+            cursor: pointer;
+            background-color: $color-primary-dark;
+
+		}
+		&:focus {
+			outline: none;
+		}
+		&#back:hover {
+			transform: translateX(-2rem);
+		}
+		&#next:hover {
+			transform: translateX(2rem);
+		}
+	}
+}
