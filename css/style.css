@@ -405,7 +405,8 @@ body {
     align-items: center; }
   .footer__menu-item {
     font-size: 2rem;
-    transition: all .2s; }
+    transition: all .2s;
+    color: white; }
     .footer__menu-item:hover {
       cursor: pointer;
       transform: scale(1.1); }
