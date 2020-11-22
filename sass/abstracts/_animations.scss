@@ -58,3 +58,13 @@
         transform: translateY(-25rem);
     }
 }
+@keyframes serviceSlide{
+    from{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
