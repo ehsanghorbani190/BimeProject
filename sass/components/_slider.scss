@@ -22,10 +22,33 @@
 		font-size: 2.5rem;
 		margin-top: 5rem;
 	}
+	&__button{
+		border: none;
+		background-image: linear-gradient(45deg,lighten($color-primary,20%), darken($color-primary-dark, 20%));
+		padding: 2rem 4rem;
+		margin-top: 2rem;
+		font-size: 2.5rem;
+		font-family: inherit;
+		color: white;
+		border-radius: 1.5rem;
+		box-shadow: 0 2rem 4rem rgba(black,.4);
+		transition: all .2s;
+		&:hover{
+			cursor: pointer;
+			transform: translateY(-.5rem) scale(1.1);
+			background-image: linear-gradient(225deg,lighten($color-primary,20%), darken($color-primary-dark, 20%));
+		}
+		&:focus{
+			outline: none;
+			transform: translateY(-.05rem) scale(1.1);
+			box-shadow: 0 1rem 2rem rgba(black,.4);
+
+		}
+	}
 	&__slide {
 		font-size: 2rem;
 		width: 50rem;
-		height: 75rem;
+		height: 82.5rem;
 		position: absolute;
 		left: 50%;
 		transform-style: preserve-3d;
@@ -49,7 +72,7 @@
 			backface-visibility: hidden;
 			width: 50rem;
 			position: absolute;
-			height: 75rem;
+			height: 82.5rem;
 			transition: all 2s;
 			box-shadow: 0 2rem 5rem rgba($color-primary-dark, 0.8);
 			border-radius: 40px;
