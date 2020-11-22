@@ -1,19 +1,19 @@
 //basic css reset
 *,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
-body{
-    box-sizing: border-box;
+body {
+	box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%; // makes 1rem = 10px (10px/16px = 62.5%)
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+html {
+	font-size: 50%; // makes 1rem = 8px (8px/16px = 62.5%) , It was 62.5% at first , but i had to change it to 50% , because i was desinging the website at zoom of 80% XD
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
