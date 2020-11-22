@@ -265,6 +265,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 5rem;
+  position: relative;
   padding-bottom: 90rem;
   flex-direction: column; }
   .coworkers__heading {
@@ -281,14 +282,20 @@ body {
     justify-content: center;
     font-size: 5rem;
     width: 6rem;
+    position: absolute;
+    top: 50%;
     height: 6rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     border: none;
     transition: all 0.3s;
-    background-color: #00a8ff;
+    background-color: rgba(0, 168, 255, 0.8);
     color: white;
     margin: 1rem; }
+    .coworkers__button#back {
+      left: 2rem; }
+    .coworkers__button#next {
+      right: 2rem; }
     .coworkers__button:hover {
       cursor: pointer;
       background-color: #0097e6; }
