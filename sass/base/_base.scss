@@ -13,4 +13,6 @@ body{
 
 html{
     font-size: 62.5%; // makes 1rem = 10px (10px/16px = 62.5%)
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
