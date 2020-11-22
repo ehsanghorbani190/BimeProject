@@ -1,35 +1,56 @@
 //Positioning the waves
-.main{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: #f9f9f9;
-    .content{
-        width: 70%;
-        box-shadow: 0 0 4rem rgba(black,.6);
-        background-color: white;
-        border-radius: 100px;
-        position: relative;
-        transform: translateY(-25rem);
-        z-index: 2;
-        padding:3rem 0 ;
-        animation-name: mainSlide ;
-        animation-duration: 1s;
-        animation-delay: 3.5s;
-        animation-fill-mode: backwards;
-        &__heading{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            color: $color-primary;
-            &-big{
-                font-size: 5.5rem;
-                font-weight: 900;
-            }
-            &-med{
-                font-size: 3.5rem;
-                font-weight: 700;
-            }
-        }
-    } 
+.main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: #f9f9f9;
+	.content {
+		width: 70%;
+		box-shadow: 0 0 4rem rgba(black, 0.6);
+		background-color: white;
+		border-radius: 100px;
+		position: relative;
+		transform: translateY(-25rem);
+		z-index: 2;
+		padding: 3rem 0;
+		animation-name: mainSlide;
+		animation-duration: 1s;
+		animation-delay: 3.5s;
+		animation-fill-mode: backwards;
+		&__heading {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			color: $color-primary;
+			&-big {
+				font-size: 5.5rem;
+				font-weight: 900;
+			}
+			&-med {
+				font-size: 3.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+	&__gotop {
+		position: absolute;
+		left: 50%;
+		width: 7rem;
+		height: 7rem;
+		display: flex;
+		justify-content: center;
+		transform: translateX(-50%);
+		background-color: $color-primary;
+		padding: 1rem;
+		border-radius: 50%;
+        box-shadow: 0 0 4rem rgba(black, 0.8);
+        transition: all .2s;
+		&:hover {
+            background-color: $color-primary-dark;
+            box-shadow: 0 0 4rem rgba($color-dark-gray, 0.8);
+		}
+		&-icon {
+			width: 5rem;
+		}
+	}
 }
