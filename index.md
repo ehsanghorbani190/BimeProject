@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bimsa</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="./img/logo-mob.png" type="image/x-icon" />
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<div class="nav__logo">
+					<span class="nav__logo-text">بیمسا</span>
+					<picture>
+						<source
+							srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+							media="(min-width:37.5em)"
+							class="nav__logo-pic"
+						/>
+						<img
+							srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+							alt="Logo"
+							class="nav__logo-pic"
+						/>
+					</picture>
+				</div>
+				<div class="nav__buttons">
+					<a href="#" class="nav__button">انواع بیمه‌ها</a>
+					<a href="#" class="nav__button">فروش سازمانی</a>
+					<a href="#" class="nav__button">بیمه‌های همکار</a>
+					<a href="#" class="nav__button">بلاگ</a>
+					<a href="#" class="nav__button">تماس با ما</a>
+				</div>
+				<div class="nav__account">
+					<span class="nav__account-text">حساب کاربری</span>
+					<picture>
+						<source
+							srcset="./img/login-icon.png 1x, ./img/login-icon@2x.png 2x"
+							media="(min-width:37.5em)"
+							class="nav__account-icon"
+						/>
+						<img srcset="./img/login-icon.png 1x, ./img/login-icon@2x.png 2x" class="nav__account-icon" />
+					</picture>
+				</div>
+			</nav>
+			<div class="hero">
+				<ul class="menu">
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon1.png 1x, ./img/icon1@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon1.png 1x, ./img/icon1@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه شخص ثالث</span>
+					</li>
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon2.png 1x, ./img/icon2@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon2.png 1x, ./img/icon2@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه بدنه</span>
+					</li>
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon3.png 1x, ./img/icon3@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon3.png 1x, ./img/icon3@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه مسافرتی</span>
+					</li>
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon4.png 1x, ./img/icon4@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon4.png 1x, ./img/icon4@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه آتش سوزی</span>
+					</li>
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon5.png 1x, ./img/icon5@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon5.png 1x, ./img/icon5@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه موتورسیکلت</span>
+					</li>
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon6.png 1x, ./img/icon6@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon6.png 1x, ./img/icon6@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه عمر</span>
+					</li>
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon7.png 1x, ./img/icon7@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon7.png 1x, ./img/icon7@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه سازمانی</span>
+					</li>
+					<li class="menu__item">
+						<picture>
+							<source
+								srcset="./img/icon8.png 1x, ./img/icon8@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="menu__item-icon"
+							/>
+							<img
+								srcset="./img/icon8.png 1x, ./img/icon8@2x.png 2x"
+								alt="Logo"
+								class="menu__item-icon"
+							/>
+						</picture>
+						<span class="menu__item-text">بیمه درمان و کرونا</span>
+					</li>
+				</ul>
+				<div class="hero__waves">
+					<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+						<path
+							d="M-11.00,101.14 C66.87,73.52 367.66,178.13 505.92,105.09 L500.00,150.00 L0.00,150.00 Z"
+							style="stroke: none; fill: #f9f9f9"
+						></path>
+						<path
+							d="M-1.41,112.00 C117.10,216.61 393.62,42.92 504.22,110.03 L500.00,150.00 L0.00,150.00 Z"
+							style="stroke: none; fill: #f9f9f9ad"
+						></path>
+					</svg>
+				</div>
+				<picture>
+					<source
+						srcset="./img/arrdown.png 1x, ./img/arrdown@2x.png 2x"
+						media="(min-width:37.5em)"
+						class="hero__arr"
+					/>
+					<img srcset="./img/arrdown.png 1x, ./img/arrdown@2x.png 2x" class="hero__arr" />
+				</picture>
+			</div>
+		</header>
+		<main class="main">
+			<div class="content">
+				<div class="content__heading">
+					<h1 class="content__heading-big">بیمسا</h1>
+					<h1 class="content__heading-med">بیمه‌ی آسان</h1>
+					<h1 class="content__heading-med">سامانه‌ی خرید و مقایسه‌ی آنلاین بیمه</h1>
+				</div>
+				<div class="features">
+					<figure class="features__box">
+						<picture>
+							<source
+								srcset="./img/feature1.png 1x, ./img/feature1@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="features__pic"
+							/>
+							<img srcset="./img/feature1.png 1x, ./img/feature1@2x.png 2x" class="features__pic" />
+						</picture>
+						<figcaption class="features__text">پشتیبانی در تمام مراحل</figcaption>
+					</figure>
+					<figure class="features__box">
+						<picture>
+							<source
+								srcset="./img/feature2.png 1x, ./img/feature2@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="features__pic"
+							/>
+							<img srcset="./img/feature2.png 1x, ./img/feature2@2x.png 2x" class="features__pic" />
+						</picture>
+						<figcaption class="features__text">ارسال رایگان</figcaption>
+					</figure>
+					<figure class="features__box">
+						<picture>
+							<source
+								srcset="./img/feature3.png 1x, ./img/feature3@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="features__pic"
+							/>
+							<img srcset="./img/feature3.png 1x, ./img/feature3@2x.png 2x" class="features__pic" />
+						</picture>
+						<figcaption class="features__text">سرعت در صدور</figcaption>
+					</figure>
+					<figure class="features__box">
+						<picture>
+							<source
+								srcset="./img/feature4.png 1x, ./img/feature4@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="features__pic"
+							/>
+							<img srcset="./img/feature4.png 1x, ./img/feature4@2x.png 2x" class="features__pic" />
+						</picture>
+						<figcaption class="features__text">سادگی در خرید</figcaption>
+					</figure>
+				</div>
+				<div class="reminder">
+					<h2 class="reminder__heading">یادآور تمدید یا اقساط بیمه</h2>
+					<div class="reminder__box">
+						<picture>
+							<source
+								srcset="./img/circles.png 1x, ./img/circles@2x.png 2x"
+								media="(min-width:37.5em)"
+								class="reminder__circles"
+							/>
+							<img srcset="./img/circles.png 1x, ./img/circles@2x.png 2x" class="reminder__circles" />
+						</picture>
+						<div class="reminder__input-box">
+							<label for="kind" class="reminder__label">نوع بیمه</label>
+							<input
+								type="text"
+								name="kind"
+								class="reminder__input"
+								placeholder="لطفا نوع بیمه را انتخاب نمایید"
+							/>
+						</div>
+						<div class="reminder__input-box">
+							<label for="func" class="reminder__label">نحوه‌ی تکرار</label>
+							<input
+								type="text"
+								name="func"
+								class="reminder__input"
+								placeholder="لطفا نحوه‌ی تکرار را انتخاب نمایید"
+							/>
+						</div>
+						<div class="reminder__input-box">
+							<label for="desc" class="reminder__label">توضیحات یادآور</label>
+							<input
+								type="text"
+								name="desc"
+								class="reminder__input"
+								placeholder="لطفا توضیحات یادآور را وارد نمایید"
+							/>
+						</div>
+						<div class="reminder__input-box">
+							<label for="date" class="reminder__label">تاریخ سررسید</label>
+							<input
+								type="text"
+								name="date"
+								class="reminder__input"
+								placeholder="لطفا تاریخ سررسید را وارد نمایید"
+							/>
+						</div>
+						<div class="reminder__input-box">
+							<label for="state" class="reminder__label">استان</label>
+							<input
+								type="text"
+								name="state"
+								class="reminder__input"
+								placeholder="لطفا استان را انتخاب نمایید"
+							/>
+						</div>
+						<div class="reminder__input-box">
+							<label for="city" class="reminder__label">شهر</label>
+							<input
+								type="text"
+								name="city"
+								class="reminder__input"
+								placeholder="لطفا شهر را انتخاب نمایید"
+							/>
+						</div>
+						<button class="reminder__button">ثبت</button>
+					</div>
+				</div>
+				<section class="coworkers">
+					<h2 class="coworkers__heading">بیمه های همکار</h2>
+					<div class="coworkers__buttons">
+						<button id="back" class="coworkers__button">&lsaquo;</button>
+						<button id="next" class="coworkers__button">&rsaquo;</button>
+					</div>
+					<div class="slider">
+						<div class="slider__box">
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider1.png 1x, ./img/slider1@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه ملت در زمینه فروش تمام محصولات بیمه‌ای فعالیت کرده و با داشتن 8 شعبه و حدود
+										2000 نمایندگی فعال، خدمات متنوعی ارائه می‌دهد. توانگری مالی بیمه ملت در رتبه یک
+										قرار دارد. در نتیجه این شرکت توانایی مطلوبی در پرداخت خسارات مورد تعهد داراست.
+										همچنین بر اساس آخرین گزارش منتشر شده، رضایت مشتریان از بیمه ملت رتبه 10 را کسب
+										کرده و 1.6% فروش کل صنعت بیمه متعلق به این شرکت است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider2.png 1x, ./img/slider2@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه دی با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی، بیمه
+										شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین شرکت
+										بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider3.png 1x, ./img/slider3@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه آسیا در زمینه فروش تمام محصولات بیمه‌ای فعالیت کرده و با داشتن 8 شعبه و
+										حدود 2000 نمایندگی فعال، خدمات متنوعی ارائه می‌دهد. توانگری مالی بیمه ملت در
+										رتبه یک قرار دارد. در نتیجه این شرکت توانایی مطلوبی در پرداخت خسارات مورد تعهد
+										داراست. همچنین بر اساس آخرین گزارش منتشر شده، رضایت مشتریان از بیمه ملت رتبه 10
+										را کسب کرده و 1.6% فروش کل صنعت بیمه متعلق به این شرکت است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider4.png 1x, ./img/slider4@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه نوین با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی،
+										بیمه شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین
+										شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider5.png 1x, ./img/slider5@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه پاسارگاد در زمینه فروش تمام محصولات بیمه‌ای فعالیت کرده و با داشتن 8 شعبه و
+										حدود 2000 نمایندگی فعال، خدمات متنوعی ارائه می‌دهد. توانگری مالی بیمه ملت در
+										رتبه یک قرار دارد. در نتیجه این شرکت توانایی مطلوبی در پرداخت خسارات مورد تعهد
+										داراست. همچنین بر اساس آخرین گزارش منتشر شده، رضایت مشتریان از بیمه ملت رتبه 10
+										را کسب کرده و 1.6% فروش کل صنعت بیمه متعلق به این شرکت است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider6.png 1x, ./img/slider6@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه البرز با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی،
+										بیمه شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین
+										شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider7.png 1x, ./img/slider7@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه ایران در زمینه فروش تمام محصولات بیمه‌ای فعالیت کرده و با داشتن 8 شعبه و
+										حدود 2000 نمایندگی فعال، خدمات متنوعی ارائه می‌دهد. توانگری مالی بیمه ملت در
+										رتبه یک قرار دارد. در نتیجه این شرکت توانایی مطلوبی در پرداخت خسارات مورد تعهد
+										داراست. همچنین بر اساس آخرین گزارش منتشر شده، رضایت مشتریان از بیمه ملت رتبه 10
+										را کسب کرده و 1.6% فروش کل صنعت بیمه متعلق به این شرکت است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+							<div class="slider__slide">
+								<div class="slider__slide-front">
+									<img srcset="./img/slider8.png 1x, ./img/slider8@2x.png 2x" class="slider__icon" />
+									<p class="slider__text">
+										بیمه رازی با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی،
+										بیمه شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین
+										شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
+									</p>
+									<button class="slider__button">صفحه‌ی بیمه</button>
+								</div>
+								<div class="slider__slide-back">
+									<picture>
+										<source
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											media="(min-width:37.5em)"
+											class="slider__slide-back-icon"
+										/>
+										<img
+											srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+											alt="Logo"
+											class="slider__slide-back-icon"
+										/>
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<a href="#" class="main__gotop">
+					<picture>
+						<source srcset="./img/up-arrow.png 1x, ./img/up-arrow@2x.png 2x" class="main__gotop-icon" />
+						<img srcset="./img/up-arrow.png 1x, ./img/up-arrow@2x.png 2x" class="main__gotop-icon" />
+					</picture>
+				</a>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__right">
+				<ul class="footer__menu">
+					<li class="footer__menu-item">بیمه شخص ثالث</li>
+					<li class="footer__menu-item">بیمه بدنه</li>
+					<li class="footer__menu-item">بیمه مسافرتی</li>
+					<li class="footer__menu-item">بیمه آتش‌سوزی</li>
+					<li class="footer__menu-item">بیمه موتورسیکلت</li>
+					<li class="footer__menu-item">بیمه عمر</li>
+					<li class="footer__menu-item">بیمه درمان تکمیلی</li>
+				</ul>
+			</div>
+			<div class="footer__logos">
+				<div class="footer__logo-box">
+					<picture>
+						<source
+							srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+							media="(min-width:37.5em)"
+							class="footer__logo"
+						/>
+						<img
+							srcset="./img/logo-desktop.png 1x, ./img/logo-desktop@2x.png 2x"
+							alt="Logo"
+							class="footer__logo"
+						/>
+					</picture>
+				</div>
+				<div class="footer__certificate-box">
+					<img src="./img/enamad.png" class="footer__certificate" />
+					<img src="./img/samandehi.png" class="footer__certificate" />
+				</div>
+				<div class="footer__cums-box">
+					<picture>
+						<source
+							srcset="./img/telegram.png 1x, ./img/telegram@2x.png 2x"
+							media="(min-width:37.5em)"
+							class="footer__cums"
+						/>
+						<img srcset="./img/telegram.png 1x, ./img/telegram@2x.png 2x" alt="Logo" class="footer__cums" />
+					</picture>
+					<picture>
+						<source
+							srcset="./img/instagram.png 1x, ./img/instagram@2x.png 2x"
+							media="(min-width:37.5em)"
+							class="footer__cums"
+						/>
+						<img
+							srcset="./img/instagram.png 1x, ./img/instagram@2x.png 2x"
+							alt="Logo"
+							class="footer__cums"
+						/>
+					</picture>
+					<picture>
+						<source
+							srcset="./img/twitter.png 1x, ./img/twitter@2x.png 2x"
+							media="(min-width:37.5em)"
+							class="footer__cums"
+						/>
+						<img srcset="./img/twitter.png 1x, ./img/twitter@2x.png 2x" alt="Logo" class="footer__cums" />
+					</picture>
+				</div>
+			</div>
+			<div class="footer__left">
+				<ul class="footer__menu">
+					<li class="footer__menu-item">ورود به پنل</li>
+					<li class="footer__menu-item">شرایط و قوانین</li>
+					<li class="footer__menu-item">سوالات متداول</li>
+					<li class="footer__menu-item">همکاری با ما</li>
+					<li class="footer__menu-item">درباره ما</li>
+					<li class="footer__menu-item">تماس با ما</li>
+					<li class="footer__menu-item">فرصت های شغلی</li>
+				</ul>
+			</div>
+			<div class="footer__bottom">تمام حقوق این سایت متعلق به شرکت بیمسا می‌باشد.</div>
+			<img src="./img/footer-backg.svg" class="footer__bg" />
+		</footer>
+		<a href="javascript:void(0)" class="service__button talk">
+			<picture>
+				<source
+					srcset="./img/service3.png 1x, ./img/service3@2x.png 2x"
+					media="(min-width:37.5em)"
+					class="service__button-icon"
+				/>
+				<img srcset="./img/service3.png 1x, ./img/service3@2x.png 2x" class="service__button-icon" />
+			</picture>
+			<span class="service__button-text">گفت‌وگو با ما</span>
+		</a>
+		<a href="javascript:void(0)" class="service__button continue">
+			<picture>
+				<source
+					srcset="./img/service4.png 1x, ./img/service4@2x.png 2x"
+					media="(min-width:37.5em)"
+					class="service__button-icon"
+				/>
+				<img srcset="./img/service4.png 1x, ./img/service4@2x.png 2x" class="service__button-icon" />
+			</picture>
+			<span class="service__button-text">تمدید</span>
+		</a>
+		<script>
+			let current = 0;
+			$('#next').click(function () {
+				if (current < 7) {
+					$('.slider__slide-front').eq(current).css('transform', 'rotateY(+180deg)');
+					$('.slider__slide-back').eq(current).css('transform', 'rotateY(0deg)');
+					setTimeout(function () {
+						$('.slider__slide').eq(current).css({
+							transform: 'translateY(10%) translateX(-200%) ',
+							visibility: 'hidden',
+							opacity: '0',
+						});
+						$('.slider__slide')
+							.eq(current + 1)
+							.css({
+								visibility: 'visible',
+								opacity: '1',
+								transform: 'translateY(10%) translateX(-50%) ',
+							});
+					}, 1500);
+					setTimeout(function () {
+						$('.slider__slide-front')
+							.eq(current + 1)
+							.css('transform', 'rotateY(0deg)');
+						$('.slider__slide-back')
+							.eq(current + 1)
+							.css('transform', 'rotateY(-180deg)');
+						current += 1;
+					}, 2000);
+				}
+			});
+			$('#back').click(function () {
+				if (current > 0) {
+					$('.slider__slide-front').eq(current).css('transform', 'rotateY(+180deg)');
+					$('.slider__slide-back').eq(current).css('transform', 'rotateY(0deg)');
+					setTimeout(function () {
+						$('.slider__slide').eq(current).css({
+							transform: 'translateY(10%) translateX(+100%)',
+							visibility: 'hidden',
+							opacity: '0',
+						});
+						$('.slider__slide')
+							.eq(current - 1)
+							.css({
+								visibility: 'visible',
+								opacity: '1',
+								transform: 'translateY(10%) translateX(-50%)',
+							});
+					}, 1500);
+					setTimeout(function () {
+						$('.slider__slide-front')
+							.eq(current - 1)
+							.css('transform', 'rotateY(0deg)');
+						$('.slider__slide-back')
+							.eq(current - 1)
+							.css('transform', 'rotateY(-180deg)');
+						current -= 1;
+					}, 2000);
+				}
+			});
+		</script>
+	</body>
+</html>
