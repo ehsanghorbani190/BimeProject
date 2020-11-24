@@ -13,8 +13,8 @@ body {
 
 html {
 	font-size: 50%; // makes 1rem = 8px (8px/16px = 50%) , It was 62.5% at first , but i had to change it to 50% , because i was desinging the website at zoom of 80% XD
-	@media (-webkit-min-device-pixel-ratio: 1.25) { 
-			font-size: 50%; // makes 1rem = 6px (6px/16px = 38.5%)  
+	@media (-webkit-max-device-pixel-ratio: 1.25) { 
+			font-size: 38.5%; // makes 1rem = 6px (6px/16px = 38.5%)   
 	}
 	overflow-x: hidden;
 	overflow-y: scroll;
