@@ -225,6 +225,7 @@ body {
     position: absolute;
     top: -6rem;
     z-index: -1;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%); }
   .reminder__box {

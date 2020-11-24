@@ -13,7 +13,8 @@
 	&__circles {
 		position: absolute;
         top: -6rem;
-        z-index: -1;
+		z-index: -1;
+		width: 100%;//For Windows
         left: 50%;
         transform: translateX(-50%);
 	}
