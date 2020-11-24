@@ -14,6 +14,9 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth; }
+  @media (-webkit-min-device-pixel-ratio: 1.25) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Vazir', sans-serif; }
